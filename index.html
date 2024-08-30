@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bici.Net - A sua bike reiniciada.</title>
+		<meta
+			name="description"
+			content="Somos uma bicicletaria localizada no Morumbi que oferece a melhor mecânica da região. Buscamos tornar você e sua bike em máquinas."
+		/>
+		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+		<link
+			rel="preload"
+			href="icons/fa-brands-400.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			href="icons/fa-solid-900.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="preload" as="style" href="icons/optimized.css" />
+		<link rel="stylesheet" href="icons/optimized.css" />
+
+		<link rel="preload" href="css/RESET.css" as="style" />
+		<link rel="stylesheet" href="css/RESET.css" />
+
+		<link
+			rel="preload"
+			href="css/Syne.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link rel="preload" href="css/style.css" as="style" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<link rel="preload" href="index.css" as="style" />
+		<link rel="stylesheet" href="index.css" />
+
+		<link
+			rel="preload"
+			as="image"
+			href="/imgs/bohdan-kadun-WIsOienEXBM-unsplash.webp"
+		/>
+	</head>
+	<body class="page-load preload">
+		<script>
+			const body = document.querySelector("body");
+
+			function load() {
+				window.addEventListener("load", () => {
+					body.classList.toggle("page-load");
+					body.classList.toggle("preload");
+				});
+			}
+
+			window.addEventListener("DOMContentLoaded", load());
+		</script>
+		<header class="header">
+			<a href="#">
+				<picture class="header-logo">
+					<source
+						class="logo-img"
+						media="(max-width: 430px)"
+						srcset="/imgs/symbol-66w.webp"
+						width="66"
+						height="66"
+					/>
+					<source
+						class="logo-img"
+						media="(max-width: 2420px)"
+						srcset="/imgs/bici-net-309w.webp"
+						width="309"
+						height="61"
+					/>
+					<img
+						class="logo-img"
+						src="/imgs/bici-net-1800w.webp"
+						alt="Logo da Bici.Net"
+						width="1800"
+						height="355"
+					/>
+				</picture>
+			</a>
+			<picture class="header-logo-cellphone"></picture>
+			<nav class="header-nav">
+				<ul class="nav-ul">
+					<li class="nav-li">
+						<a href="">Nossa estrutura</a>
+					</li>
+					<li class="nav-li">
+						<a href="">Serviços</a>
+					</li>
+					<li class="nav-li">
+						<a href="">História</a>
+					</li>
+				</ul>
+				<a href="#contate-nos">
+					<button class="btn-primario header-cta">
+						ENTRE EM CONTATO
+						<i class="fa-solid fa-arrow-right" style="padding-left: 8px"></i>
+					</button>
+				</a>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero-wrapper">
+					<h1 class="hero-title">SUA BIKE REINICIADA.</h1>
+					<p>
+						Cansado da sua corrente caindo? Somos uma mecânica especializada em
+						transformar bicicletas velhas, em novas máquinas.
+					</p>
+				</div>
+				<a aria-label="Ir para o sobre nós" href="#sobre-nos" style="z-index: 1"
+					><button class="btn-primario hero-btn">Por que a Bici.Net?</button></a
+				>
+			</section>
+			<section class="servicos">
+				<div class="servicos-container">
+					<figure>
+						<img
+							src="/imgs/taylor-smith-GNSIOmiBFaY-unsplash.webp"
+							alt="Homem mexendo em uma bicicleta de estrada."
+							width="1000"
+							height="1500"
+						/>
+						<figcaption>
+							Imagem retirada do Unsplash. Créditos a Taylor Smith.
+						</figcaption>
+					</figure>
+					<h2 class="servicos-title">Prestamos serviços de...</h2>
+				</div>
+				<div class="servicos-wrapper">
+					<div class="servico-box">
+						<div class="wrapper">
+							<h3 class="servico-nome" style="--increment: 0%">Revisão qualitativa</h3>
+							<p>
+								Dependendo do tipo, revisamos a bicicleta, lubrificando as partes
+								necessárias e fazendo os devidos ajustes.
+							</p>
+						</div>
+						<a style="position: relative; width: fit-content" href=""
+							>Saiba mais
+							<i class="fa-solid fa-arrow-right" style="padding-left: 8px"></i
+						></a>
+					</div>
+					<div class="servico-box">
+						<div class="wrapper">
+							<h3 class="servico-nome" style="--increment: 50%">Bike Fit</h3>
+							<p>
+								Com medidas do seu corpo, ajustamos a sua bicicleta para aumentar o seu
+								conforto e melhorar sua pilotagem.
+							</p>
+						</div>
+						<a style="position: relative; width: fit-content" href=""
+							>Saiba mais
+							<i class="fa-solid fa-arrow-right" style="padding-left: 8px"></i
+						></a>
+					</div>
+					<div class="servico-box">
+						<div class="wrapper">
+							<h3 class="servico-nome" style="--increment: 100%">Montagem</h3>
+							<p>
+								Realizamos a montagem de bicicletas customizadas sempre atentando aos
+								detalhes e lubrificando as partes necessárias.
+							</p>
+						</div>
+						<a style="position: relative; width: fit-content" href=""
+							>Saiba mais
+							<i class="fa-solid fa-arrow-right" style="padding-left: 8px"></i
+						></a>
+					</div>
+				</div>
+			</section>
+			<section class="tec">
+				<div class="card">
+					<h2 class="title">+ de 360 clientes</h2>
+					<p>atendidos e que nos tem de refêrencia.</p>
+				</div>
+				<div class="card">
+					<h2 class="title">3,5 anos</h2>
+					<p>atuando no mercado de bicicletas.</p>
+				</div>
+				<div class="card">
+					<h2 class="title">+ de 690 bikes</h2>
+					<p>montadas e revisadas conosco.</p>
+				</div>
+			</section>
+			<section class="galeria">
+				<figure>
+					<img
+						loading="lazy"
+						decoding="async"
+						src="/imgs/bohdan-kadun-6rctMmhTk9o-unsplash.webp"
+						alt="Bicicleta com sua suspensão dianteira desmontada, atrás, homem mexendo na parte interna da suspensão."
+						width="2000"
+						height="1333"
+					/>
+					<figcaption>
+						Imagem retirada do Unsplash. Crédito para Bohdan Kadun.
+					</figcaption>
+				</figure>
+				<figure>
+					<img
+						loading="lazy"
+						decoding="async"
+						src="/imgs/bohdan-kadun-u0ksJ3ZM7ZU-unsplash.webp"
+						alt="Homem montando a suspensão dianteira de uma bicicleta."
+						width="2000"
+						height="1333"
+					/>
+					<figcaption>
+						Imagem retirada do Unsplash. Crédito para Bohdan Kadun.
+					</figcaption>
+				</figure>
+				<figure>
+					<img
+						loading="lazy"
+						decoding="async"
+						src="/imgs/bohdan-kadun-r34zlMKZ2SU-unsplash.webp"
+						alt="Homem inserindo óleo na suspensão dianteira de bicicleta."
+						width="2000"
+						height="1335"
+					/>
+					<figcaption>
+						Imagem retirada do Unsplash. Crédito para Bohdan Kadun.
+					</figcaption>
+				</figure>
+			</section>
+			<section class="avaliacoes">
+				<h2 class="title">Nossos clientes pensam que...</h2>
+				<div class="avaliacoes-wrapper">
+					<div class="card">
+						<p>
+							“Foi com a Bici.Net aonde voltei a amar a minha bike. Ótima equipe, o
+							Cláudio é muito gente boa”
+						</p>
+						<div class="container">
+							<p class="nome">Roberta Nazário</p>
+							<span class="estrelas" style="color: goldenrod"
+								><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+								><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+								><i class="fa-solid fa-star"></i
+							></span>
+						</div>
+					</div>
+					<div class="card">
+						<p>
+							“Os caras da Bici.Net estão de parabéns, parecia estar no paraíso, sai de
+							lá com um foguete!”
+						</p>
+						<div class="container">
+							<p class="nome">José Estefano</p>
+							<span class="estrelas" style="color: goldenrod"
+								><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+								><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+								><i class="fa-solid fa-star"></i
+							></span>
+						</div>
+					</div>
+					<div class="card">
+						<p>
+							“Nunca vi algo parecido. O Cláudio e sua equipe são máquinas na mecânica.
+							Gratidão pela confiança!”
+						</p>
+						<div class="container">
+							<p class="nome">Caetano Caiano</p>
+							<span class="estrelas" style="color: goldenrod"
+								><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+								><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+								><i class="fa-solid fa-star"></i
+							></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="sobre-nos" class="sobre-nos">
+				<h2 draggable="none" class="title">Por que somos a sua escolha?</h2>
+				<figure>
+					<img
+						loading="lazy"
+						decoding="async"
+						src="/imgs/anton-savinov-s1WAYGpcDvs-unsplash.webp"
+						alt="Homem alinhando os raios de uma roda de bicicleta em um equipamento feito para alinhamento de rodas."
+						width="1125"
+						height="2000"
+					/>
+					<figcaption>
+						Imagem retirada do Unsplash. Créditos para Anton Savinov.
+					</figcaption>
+				</figure>
+				<div class="text-wrapper">
+					<p>
+						Começamos simples, pensando em atender principalmente aquele que busca ter
+						sua bike como aquele foguete que antes tinha. O Cláudio Esfera, nosso
+						mecânico chefe, é um mestre em renovar bicicletas, até as mais esmurradas,
+						e nosso BikeFit é um dos melhores. E Antonio Jordão, o dono da Bici.Net,
+						deu a todos a infraestrutura para que consigam
+					</p>
+					<ul>
+						<li style="--increment: 0%">Reviver bicicletas cansadas;</li>
+						<li style="--increment: 50%">
+							Mudar a relação do ciclista com sua bicicleta;
+						</li>
+						<li style="--increment: 100%">
+							Ajudar você a encontrar a bicicleta dos seus sonhos, a um preço de
+							quiabo.
+						</li>
+					</ul>
+				</div>
+				<div class="button-wrapper">
+					<button class="btn-secundario sobre-nos-btn">Veja nossa estrutura!</button>
+					<button class="btn-terciario1 sobre-nos-btn">
+						Conheça nossa história.
+					</button>
+				</div>
+			</section>
+			<section class="equipe">
+				<h2 class="title">Conheça quem transformará sua bike!</h2>
+				<div class="wrapper">
+					<div class="card">
+						<img
+							loading="lazy"
+							decoding="async"
+							src="https://avatar.iran.liara.run/public/boy?jordan"
+							alt="Avatar"
+							class="avatar"
+							width="300"
+							height="300"
+						/>
+						<div class="container">
+							<h3 class="nome">Antonio Jordão</h3>
+							<p>Fundador da Bici.Net</p>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							loading="lazy"
+							decoding="async"
+							src="https://avatar.iran.liara.run/public/boy?username=claudio"
+							alt="Avatar"
+							class="avatar"
+							width="300"
+							height="300"
+						/>
+						<div class="container">
+							<h3 class="nome">Cláudio Esfera</h3>
+							<p>Mecânico chefe</p>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							loading="lazy"
+							decoding="async"
+							src="https://avatar.iran.liara.run/public/girl?claudia"
+							alt="Avatar"
+							class="avatar"
+							width="300"
+							height="300"
+						/>
+						<div class="container">
+							<h3 class="nome">Cláudia Joanete</h3>
+							<p>Bike fitter</p>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							loading="lazy"
+							decoding="async"
+							src="https://avatar.iran.liara.run/public/boy?username=rodinei"
+							alt="Avatar"
+							class="avatar"
+							width="300"
+							height="300"
+						/>
+						<div class="container">
+							<h3 class="nome">Rodinei Gea</h3>
+							<p>Mecânico assistente</p>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							loading="lazy"
+							decoding="async"
+							src="https://avatar.iran.liara.run/public/boy?username=josue"
+							alt="Avatar"
+							class="avatar"
+							width="300"
+							height="300"
+						/>
+						<div class="container">
+							<h3 class="nome">Josue Matias</h3>
+							<p>Vendedor chefe</p>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							loading="lazy"
+							decoding="async"
+							src="https://avatar.iran.liara.run/public/girl?username=joana"
+							alt="Avatar"
+							class="avatar"
+							width="300"
+							height="300"
+						/>
+						<div class="container">
+							<h3 class="nome">Joana Urutau</h3>
+							<p>Vendedora assistente</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<figure class="img-divider">
+				<img
+					loading="lazy"
+					decoding="async"
+					src="/imgs/bohdan-kadun-XvBfMNVZtXY-unsplash.webp"
+					alt="Parte da frente de uma bicicleta. Mostrando o guidão e a mesinha."
+					width="2000"
+					height="1333"
+				/>
+				<figcaption>
+					Imagem retirada do Unsplash. Créditos para Bohdan Kadun.
+				</figcaption>
+			</figure>
+			<section id="contate-nos" class="contate-nos">
+				<div class="text-container">
+					<p>
+						Tá afim de transformar sua bicicleta em uma
+						<span style="font-family: sans-serif">0</span>km?
+					</p>
+					<h2>ENTRE EM CONTATO!</h2>
+				</div>
+				<div class="social-container">
+					<div class="qr-code">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="300"
+							height="300"
+							shape-rendering="geometricPrecision"
+							text-rendering="geometricPrecision"
+							image-rendering="optimizeQuality"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+						>
+							<path fill="#fefffe" d="M-.146-.146h300v300h-300z" />
+							<path
+								d="M10.965 10.965h77.778v77.778H10.965zm144.444 22.222h11.111v11.111h11.111v66.667h11.111V77.632h11.111v88.889h-11.111v11.111H166.52V155.41h11.111v-11.111H166.52v-11.111h-22.222v-11.111h22.222V99.855h-11.111v11.111h-11.111V77.633h-11.111V66.522h-11.111V44.3h11.111V22.078H99.854V10.967h44.444v11.111h11.111zm22.223 0h-11.111V10.965h11.111zm33.333-22.222h77.778v77.778h-77.778z"
+							/>
+							<path fill="#fefffe" d="M22.076 22.076h55.556v55.556H22.076z" />
+							<path
+								d="M177.632 44.298V33.187h11.111V22.076h11.111V66.52h-11.111V44.298z"
+							/>
+							<path fill="#fefffe" d="M222.076 22.076h55.556v55.556h-55.556z" />
+							<path
+								d="M33.187 33.187H66.52V66.52H33.187zm88.889 11.111h-11.111V33.187h11.111z"
+							/>
+							<path
+								fill="#fefffe"
+								d="M155.409 33.187v22.222h-11.111V33.187zm11.111 0h11.111v11.111H166.52z"
+							/>
+							<path
+								d="M233.187 33.187h33.333V66.52h-33.333zM122.076 66.52v11.111h-11.111V66.52z"
+							/>
+							<path
+								fill="#fefffe"
+								d="M122.076 66.52h11.111v11.111h-11.111zm33.333 11.111h-11.111V66.52h11.111z"
+							/>
+							<path
+								d="M110.965 77.632v11.111h11.111v22.222h-11.111V99.854H99.854V77.632z"
+							/>
+							<path fill="#fefffe" d="M110.965 77.632h11.111v11.111h-11.111z" />
+							<path d="M122.076 77.632h11.111v11.111h-11.111z" />
+							<path fill="#fefffe" d="M155.409 77.632h11.111v11.111h-11.111z" />
+							<path
+								d="M33.187 110.965H22.076v11.111H10.965V99.854h22.222zm33.333 0H44.298V99.854H66.52zm22.222 0H77.631V99.854h11.111zm133.333 0h-11.111V99.854h11.111zm55.556 0V99.854h11.111v11.111zm-244.444 0h11.111v11.111h11.111v11.111H66.52v-22.222h11.111v11.111h11.111v11.111h11.111v11.111h33.333v44.444h11.111v-11.111h11.111v11.111h11.111v55.556h11.111v-22.222h11.111v-44.444h11.111v-11.111h22.222v11.111h11.111v11.111h11.111v55.556h-22.222v11.111h-11.111v11.111h-11.111v-22.222h-11.111v22.222H177.63V255.41h-11.111v33.333H99.852v-22.222h11.111V255.41h33.333v-11.111h11.111v-22.222h-11.111v-11.111h-22.222v-22.222H99.852v-22.222h11.111v-11.111H66.519V144.3H55.408v11.111H33.186V144.3h11.111v-11.111H33.186z"
+							/>
+							<path
+								fill="#fefffe"
+								d="M44.298 110.965H66.52v22.222H55.409v-11.111H44.298zm33.333 0h11.111v11.111H77.631z"
+							/>
+							<path
+								d="M88.743 110.965h11.111v11.111H88.743zm33.333 0h11.111v11.111h-11.111zm100 0h55.556v11.111h11.111v33.333h-11.111v-11.111h-33.333v-11.111h-33.333v-11.111h11.111zm-100 11.111v11.111h-11.111v-11.111z"
+							/>
+							<path
+								fill="#fefffe"
+								d="M277.632 122.076v11.111H255.41v-11.111zM88.743 133.187v11.111H77.632v-11.111zm88.889 11.111v-11.111h11.111v11.111z"
+							/>
+							<path
+								d="M33.187 155.409v11.111h11.111v11.111h11.111v-22.222H66.52v33.333H55.409v11.111H33.187v-22.222H22.076v22.222H10.965v-55.556h11.111v11.111z"
+							/>
+							<path fill="#fefffe" d="M66.52 155.409H55.409v-11.111H66.52z" />
+							<path d="M233.187 155.409h-22.222v-11.111h22.222z" />
+							<path
+								fill="#fefffe"
+								d="M33.187 155.409h22.222v22.222H44.298V166.52H33.187zm33.333 0h44.444v11.111H99.853v22.222H66.52z"
+							/>
+							<path
+								d="M144.298 155.409h11.111v11.111h-11.111zm88.889 0h11.111v11.111h22.222v-11.111h11.111v11.111h11.111v22.222h-11.111v22.222h-22.222v-22.222h-22.222zM77.631 166.52h11.111v11.111H77.631z"
+							/>
+							<path
+								fill="#fefffe"
+								d="M110.965 166.52h11.111v11.111h-11.111zm88.889 0v11.111h-11.111V166.52zm33.333 11.111h11.111v11.111zm44.444 11.111H266.52v-11.111h11.111z"
+							/>
+							<path d="M66.52 188.743h33.333v11.111H66.52z" />
+							<path
+								fill="#fefffe"
+								d="M99.854 188.743h22.222v22.222h-11.111v-11.111H99.854z"
+							/>
+							<path d="M99.854 199.854h11.111v11.111H99.854z" />
+							<path
+								fill="#fefffe"
+								d="M144.298 210.965v-11.111h11.111v11.111zm55.556-11.111h33.333v33.333h-33.333z"
+							/>
+							<path
+								d="M10.965 210.965h77.778v77.778H10.965zm100 0h11.111v11.111h-11.111z"
+							/>
+							<path fill="#fefffe" d="M122.076 210.965h22.222v11.111h-22.222z" />
+							<path
+								d="M210.965 210.965h11.111v11.111h-11.111zm66.667 0h11.111v11.111h-11.111z"
+							/>
+							<path fill="#fefffe" d="M22.076 222.076h55.556v55.556H22.076z" />
+							<path d="M122.076 222.076h22.222v22.222h-22.222z" />
+							<path fill="#fefffe" d="M144.298 222.076h11.111v22.222h-11.111z" />
+							<path
+								d="M33.187 233.187H66.52v33.333H33.187zm77.778 22.222H99.854v-22.222h11.111zm144.444 22.222V266.52h-11.111v11.111h-22.222V266.52h11.111v-11.111h33.333v-22.222h22.222v55.556h-11.111v-11.111z"
+							/>
+							<path
+								fill="#fefffe"
+								d="M144.298 255.409h11.111v11.111h-11.111zm-22.222 11.111h11.111v11.111h-11.111zm133.333 11.111h-11.111V266.52h11.111z"
+							/>
+							<path
+								d="M188.743 277.632h22.222v11.111h-22.222zm55.556 0h11.111v11.111h-11.111z"
+							/>
+						</svg>
+					</div>
+					<div class="wrapper">
+						<a href=""
+							><button
+								class="social-button instagram"
+								style="--social-color: var(--clr-vermelho)"
+							>
+								<i class="fa-brands fa-instagram"></i></button
+						></a>
+						<a href=""
+							><button
+								class="social-button facebook"
+								style="--social-color: var(--clr-roxo)"
+							>
+								<i class="fa-brands fa-facebook"></i></button
+						></a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<p>Todos os direitos reservados.</p>
+			<div class="wrapper">
+				<p>Desenvolvido por:</p>
+				<a href="https://agencia-aj.com/" style="transition: scale, 300ms">
+					<img
+						title="AJ - Agência de Web Design"
+						src="/imgs/logo-96w.webp"
+						alt="AJ - Agência de Web Design"
+					/>
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>
